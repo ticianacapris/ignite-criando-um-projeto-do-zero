@@ -1,39 +1,51 @@
-.postContainer {
+.posts {
+  margin-top: 5rem;
 
-  h1 {
-    line-height: 3rem;
-  }
+  a {
+    display: block;
 
- section {
-  display: flex;
-  flex-direction: row;
-  margin-top: 1rem;
-
-  div {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-
-    svg {
-      margin-right: 0.5rem;
+    & + a {
+      margin-top: 4rem;
     }
 
-    margin: 1rem 0;
+    strong {
+      color: var(--heading);
+      font-size: 2.8rem;
+      cursor: pointer;
+    }
 
-    & + div {
-      margin-left: 2rem;
+    p {
+      color: var(--body);
+      font-size: 1.8rem;
+      margin-top: 0.8rem;
+    }
+
+    > div {
+      display: flex;
+      align-items: center;
+      margin-top: 2rem;
+
+      span {
+        display: flex;
+        align-items: center;
+        color: var(--body);
+
+        svg {
+          margin-right: 0.8rem;
+        }
+
+        & + span {
+          margin-left: 2rem;
+        }
+      }
     }
   }
- }
 }
 
-.button {
-    font-size: 1rem;
-    color: var(--highlight);
-    font-weight: bold;
-    margin: 2rem 0;
-    border: none;
-    background: transparent;
+.loadMoreButton {
+  color: var(--highlight);
+  background-color: transparent;
+  border: none;
+  font-size: 1.8rem;
+  margin-top: 4rem;
 }
-
